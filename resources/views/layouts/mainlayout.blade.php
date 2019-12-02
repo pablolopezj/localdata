@@ -15,10 +15,11 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
     <!-- CSS Files -->
     <link href="assets/css/material-dashboard.css?v=2.1.1" rel="stylesheet" />
+    @yield('styles')
 
 </head>
 
-<body class="">
+<body ng-app="app">
     <div class="wrapper ">
         <!-- Main menu -->
         @include('layouts.__includes.menu')
@@ -41,6 +42,7 @@
     <!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
     <script src="assets/js/material-dashboard.js?v=2.1.1" type="text/javascript"></script>
     <script src="assets/js/main-sidebar.js" type="text/javascript"></script>
+    @yield('scripts')
 </body>
 
 </html>

@@ -8,7 +8,8 @@ use DB;
 class MainController extends Controller
 {
     public function index(){
-        $results = DB::select('select * from TAREASCLAROQA LIMIT 10');
+        $results = DB::select('SELECT * FROM TAREASCLAROQA LIMIT 10');
+        //return $results;
         return view('tasks.search');
     }
 }
