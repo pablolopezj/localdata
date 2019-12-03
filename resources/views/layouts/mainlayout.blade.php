@@ -34,13 +34,13 @@
     </div>
 
     <!--   Core JS Files   -->
-    <script src="assets/js/core/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="assets/js/core/popper.min.js"></script>
     <script src="assets/js/core/bootstrap-material-design.min.js"></script>
 
 
     <!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
-    <script src="assets/js/material-dashboard.js?v=2.1.1" type="text/javascript"></script>
+    
     <script src="assets/js/main-sidebar.js" type="text/javascript"></script>
     @yield('scripts')
 </body>
