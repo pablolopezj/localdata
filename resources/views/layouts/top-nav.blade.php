@@ -9,9 +9,9 @@
     <title>AdminLTE 3 | Top Navigation</title>
 
     <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="template/plugins/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="/template/plugins/fontawesome-free/css/all.min.css">
     <!-- Theme style -->
-    <link rel="stylesheet" href="template/dist/css/adminlte.min.css">
+    <link rel="stylesheet" href="/template/dist/css/adminlte.min.css">
     <!-- Google Font: Source Sans Pro -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
     @yield('styles')
@@ -23,8 +23,8 @@
         <!-- Navbar -->
         <nav class="main-header navbar navbar-expand-md navbar-light navbar-white">
             <div class="container">
-                <a href="../../index3.html" class="navbar-brand">
-                    <img src="template/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+                <a href="/" class="navbar-brand">
+                    <img src="/template/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
                     <span class="brand-text font-weight-light">Data - Local</span>
                 </a>
 
@@ -39,7 +39,7 @@
                             <a id="dropdownSubMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">Tareas</a>
                             <ul aria-labelledby="dropdownSubMenu1" class="dropdown-menu border-0 shadow">
                                 <li><a href="/" class="dropdown-item">Tareas Claro </a></li>
-                                <li><a href="#" class="dropdown-item">Tareas En Digital</a></li>
+                                <li><a href="/tareas/en-digital" class="dropdown-item">Tareas En Digital</a></li>
                                 <li><a href="#" class="dropdown-item">Tareas GoDaddy</a></li>
                             </ul>
                         </li>
@@ -112,11 +112,11 @@
     <!-- REQUIRED SCRIPTS -->
 
     <!-- jQuery -->
-    <script src="template/plugins/jquery/jquery.min.js"></script>
+    <script src="/template/plugins/jquery/jquery.min.js"></script>
     <!-- Bootstrap 4 -->
-    <script src="template/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/template/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- AdminLTE App -->
-    <script src="template/dist/js/adminlte.min.js"></script>
+    <script src="/template/dist/js/adminlte.min.js"></script>
     @yield('scripts')
 </body>
 
