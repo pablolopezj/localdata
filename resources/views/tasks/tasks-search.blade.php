@@ -7,6 +7,23 @@
 
 
 @section('content')
+<div class="content-header">
+    <div class="container">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1 class="m-0 text-dark"> Busqueda <small>Tareas claro</small></h1>
+            </div><!-- /.col -->
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a href="#">Tareas</a></li>
+                    <li class="breadcrumb-item active">Claro </li>
+                </ol>
+            </div><!-- /.col -->
+        </div><!-- /.row -->
+    </div><!-- /.container-fluid -->
+</div>
+<!-- /.content-header -->
+
 <div class="content">
     <div class="container-fluid">
         <div class="row">
@@ -14,7 +31,7 @@
                 <!-- start grid -->
                 <div class="card">
                     <div class="card-header">
-                        <h3 class="card-title">Buscar Tareas</h3>
+                        <h3 class="card-title">Buscar Tareas Claro</h3>
                     </div>
                     <div class="card-body">
                         <table id="tasks" class="table table-bordered table-hover" style="width:100%">
@@ -27,6 +44,7 @@
                                     <th>Virket ID</th>
                                     <th>Supervisor Asignado</th>
                                     <th>Resource Allocated</th>
+                                    <th>Action</th>
                                 </tr>
                             </thead>
                             <tfoot>
@@ -38,51 +56,90 @@
                                     <th>Virket ID</th>
                                     <th>Supervisor Asignado</th>
                                     <th>Resource Allocated</th>
+                                    <th>Action</th>
                                 </tr>
                             </tfoot>
                         </table>
                     </div>
                 </div>
-                    <!-- end grid -->
-                </div>
+                <!-- end grid -->
             </div>
         </div>
     </div>
-    @endsection
+</div>
 
-    @section('scripts')
-    <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js" type="text/javascript"></script>
+<!-- /.modal -->
 
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $('#tasks').DataTable({
-                "pageLength": 10,
-                "ajax": '/tasks',
-                "columns": [
-                    {
-                        "data": "Name"
-                    },
-                    {
-                        "data": "Project"
-                    },
-                    {
-                        "data": "Start Date"
-                    },
-                    {
-                        "data": "Status"
-                    },
-                    {
-                        "data": "Virket ID"
-                    },
-                    {
-                        "data": "Supervisor Asignado"
-                    },
-                    {
-                        "data": "Resource Allocated"
+<div class="modal fade" id="modal-xl">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Tarea</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p class="main-content">
+
+                </p>
+            </div>
+            <div class="modal-footer justify-content-between">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+@endsection
+
+@section('scripts')
+<script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+
+
+        $('#tasks').DataTable({
+            "pageLength": 10,
+            "ajax": '/tasks',
+            "columns": [{
+                    "data": "Name"
+                },
+                {
+                    "data": "Project"
+                },
+                {
+                    "data": "Start Date"
+                },
+                {
+                    "data": "Status"
+                },
+                {
+                    "data": "Virket ID"
+                },
+                {
+                    "data": "Supervisor Asignado"
+                },
+                {
+                    "data": "Resource Allocated"
+                },
+                {
+                    "data": null,
+                    "bSortable": false,
+                    "mRender": function(d) {
+                        return '<a href="#" onClick="javaScript:showdata()" class="table-grid__show" data-toggle="modal" data-target="#modal-xl"><i class="fas fa-eye"></i></a>';
                     }
-                ],
+                }
+            ],
 
-            });
         });
-    </script>
-    @endsection
+    });
+
+    function showdata(d) {
+        console.log(d);
+    }
+</script>
+@endsection

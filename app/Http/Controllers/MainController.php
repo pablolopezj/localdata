@@ -12,7 +12,7 @@ class MainController extends Controller
     }
 
     public function tasks() {
-        $results = DB::select('SELECT * FROM TAREASCLAROQA');
+        $results = DB::select('SELECT * FROM tareas_claro limit 50');
         return ['data' => $results ];
         
     }
