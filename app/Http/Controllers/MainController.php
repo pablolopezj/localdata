@@ -78,4 +78,51 @@ class MainController extends Controller
         $results = DB::select('SELECT * FROM tickets_en_digital WHERE Internal_ID = ' . $internal_id);
         return view('tasks.show-data', compact('results'));
     }
+
+    //Customers CLARO
+    public function customersClaro() {
+        return view('customers.customers-claro');
+    }
+    public function feedCustomersClaro()
+    {
+        $results = DB::select('SELECT * FROM clientes_claro WHERE Internal_ID != "Internal ID" LIMIT 5500');
+        return ['data' => $results];
+    }
+    public function customerDataCalro($internal_id)
+    {
+        $results = DB::select('SELECT * FROM clientes_claro WHERE Internal_ID = ' . $internal_id);
+        return view('tasks.show-data', compact('results'));
+    }
+
+    //Customers En Digital
+    public function customersEnDigital()
+    {
+        return view('customers.customer-en-digital');
+    }
+    public function feedCustomersEnDigital()
+    {
+        $results = DB::select('SELECT * FROM clientes_en_digital WHERE Internal_ID != "Internal ID" LIMIT 5500');
+        return ['data' => $results];
+    }
+    public function customerDataEnDigital($internal_id)
+    {
+        $results = DB::select('SELECT * FROM clientes_en_digital WHERE Internal_ID = ' . $internal_id);
+        return view('tasks.show-data', compact('results'));
+    }
+
+    //Customers Godaddy
+    public function customersGodaddy()
+    {
+        return view('customers.customers-godaddy');
+    }
+    public function feedCustomersGodaddy()
+    {
+        $results = DB::select('SELECT * FROM clientes_godaddy WHERE Internal_ID != "Internal ID" LIMIT 5500');
+        return ['data' => $results];
+    }
+    public function customerGodaddy($internal_id)
+    {
+        $results = DB::select('SELECT * FROM clientes_godaddy WHERE Internal_ID = ' . $internal_id);
+        return view('tasks.show-data', compact('results'));
+    }
 }

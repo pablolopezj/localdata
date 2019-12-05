@@ -19,3 +19,15 @@ Route::get('/ticket-godaddy/{internal_id}', 'MainController@ticketGodaddy')->nam
 Route::get('/tickets/endigital', 'MainController@ticketsEndigital')->name('tickets-endigital');
 Route::get('/feed/tickets-endigital', 'MainController@feedEndigitalTicket')->name('feed-endigital-ticket');
 Route::get('/ticket-endigital/{internal_id}', 'MainController@ticketEndigital')->name('ticket-endigital');
+
+Route::get('/customers/claro', 'MainController@customersClaro')->name('customers-claro');
+Route::get('/feed/customers/claro', 'MainController@feedCustomersClaro')->name('feed-claro-customer');
+Route::get('/customers-claro/{internal_id}', 'MainController@customerDataCalro')->name('customer-claro');
+
+Route::get('/customers/en-digital', 'MainController@customersEnDigital')->name('customers-en-digital');
+Route::get('/feed/customers/en-digital', 'MainController@feedCustomersEnDigital')->name('feed-en-digital-customer');
+Route::get('/customers-en-digital/{internal_id}', 'MainController@customerDataEnDigital')->name('customer-en-digital');
+
+Route::get('/customers/godaddy', 'MainController@customersGodaddy')->name('customers-godaddy');
+Route::get('/feed/customers/godaddy', 'MainController@feedCustomersGodaddy')->name('feed-godaddy-customer');
+Route::get('/customers-godaddy/{internal_id}', 'MainController@customerGodaddy')->name('customer-godaddy');
