@@ -125,4 +125,20 @@ class MainController extends Controller
         $results = DB::select('SELECT * FROM clientes_godaddy WHERE Internal_ID = ' . $internal_id);
         return view('tasks.show-data', compact('results'));
     }
+
+    //Sales Order
+    public function customersSalesOrder() 
+    {
+        return view('salesorder.sales-order');
+    }
+    public function feedCustomersSalesOrder()
+    {
+        $results = DB::select('SELECT * FROM sales_orders WHERE Internal_ID != "Internal ID" LIMIT 5500');
+        return ['data' => $results];
+    }
+    public function customerSalesOrder($internal_id)
+    {
+        $results = DB::select('SELECT * FROM sales_orders WHERE Internal_ID = ' . $internal_id);
+        return view('tasks.show-data', compact('results'));
+    }
 }

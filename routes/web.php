@@ -31,3 +31,7 @@ Route::get('/customers-en-digital/{internal_id}', 'MainController@customerDataEn
 Route::get('/customers/godaddy', 'MainController@customersGodaddy')->name('customers-godaddy');
 Route::get('/feed/customers/godaddy', 'MainController@feedCustomersGodaddy')->name('feed-godaddy-customer');
 Route::get('/customers-godaddy/{internal_id}', 'MainController@customerGodaddy')->name('customer-godaddy');
+
+Route::get('/salesorder', 'MainController@customersSalesOrder')->name('sales-order');
+Route::get('/feed/salesorder', 'MainController@feedCustomersSalesOrder')->name('feed-sales-oreder');
+Route::get('/salesorder/{internal_id}', 'MainController@customerSalesOrder')->name('sales-order-data');

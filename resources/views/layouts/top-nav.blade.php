@@ -59,7 +59,7 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">Sales Orders</a>
+                            <a href="/salesorder" class="nav-link">Sales Orders</a>
                         </li>
                     </ul>
                 </div>
