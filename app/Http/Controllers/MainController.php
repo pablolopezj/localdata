@@ -19,7 +19,7 @@ class MainController extends Controller
 
     public function tareaClaro($internal_id) {
         $results = DB::select('SELECT * FROM tareas_claro WHERE Internal_ID = '. $internal_id);
-        return $results;
+        return view('tasks.show-data', compact('results'));
     }
 
     // Taareas En Digital 
@@ -34,7 +34,7 @@ class MainController extends Controller
 
     public function tareaEnDigital($internal_id) {
         $results = DB::select('SELECT * FROM tareas_en_digital WHERE Internal_ID = ' . $internal_id);
-        return $results;
+        return view('tasks.show-data', compact('results'));
     }
     //Tareas Godaddy
     public function tareasGodaddy() {
@@ -47,7 +47,7 @@ class MainController extends Controller
     public function tareaGodaddy($internal_id)
     {
         $results = DB::select('SELECT * FROM tareas_goaddy WHERE Internal_ID = ' . $internal_id);
-        return $results;
+        return view('tasks.show-data', compact('results'));
     }
 
     //Tickets Godaddy
@@ -60,7 +60,7 @@ class MainController extends Controller
     }
     public function ticketGodaddy($internal_id) {
         $results = DB::select('SELECT * FROM tickets_godaddy WHERE Internal_ID = ' . $internal_id);
-        return $results;
+        return view('tasks.show-data', compact('results'));
     }
 
     //Tickets EnDigital
@@ -76,6 +76,6 @@ class MainController extends Controller
     public function ticketEndigital($internal_id)
     {
         $results = DB::select('SELECT * FROM tickets_en_digital WHERE Internal_ID = ' . $internal_id);
-        return $results;
+        return view('tasks.show-data', compact('results'));
     }
 }
