@@ -148,7 +148,7 @@ class MainController extends Controller
         return view('customers.customer-all');
     }
     public function feedCustomers() {
-        $results = DB::select('SELECT * FROM cliente LIMIT 5500');
+        $results = DB::select('SELECT * FROM cliente');
         return ['data' => $results];
     }
     public function datacustomer($internal_id)
