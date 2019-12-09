@@ -51,12 +51,7 @@
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a id="dropdownSubMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">Clientes</a>
-                            <ul aria-labelledby="dropdownSubMenu1" class="dropdown-menu border-0 shadow">
-                                <li><a href="/customers/en-digital" class="dropdown-item">Clientes En Digital</a></li>
-                                <li><a href="/customers/claro" class="dropdown-item">Clientes Claro</a></li>
-                                <li><a href="/customers/godaddy" class="dropdown-item">Clientes GoDaddy</a></li>
-                            </ul>
+                            <a href="/customers" class="nav-link">Clientes</a>
                         </li>
                         <li class="nav-item">
                             <a href="/salesorder" class="nav-link">Sales Orders</a>
