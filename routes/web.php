@@ -35,3 +35,8 @@ Route::get('/customers-godaddy/{internal_id}', 'MainController@customerGodaddy')
 Route::get('/salesorder', 'MainController@customersSalesOrder')->name('sales-order');
 Route::get('/feed/salesorder', 'MainController@feedCustomersSalesOrder')->name('feed-sales-oreder');
 Route::get('/salesorder/{internal_id}', 'MainController@customerSalesOrder')->name('sales-order-data');
+
+/** Clientes  */
+Route::get('/customers', 'MainController@customers')->name('customer');
+Route::get('/feed/customers', 'MainController@feedCustomers')->name('feed-customer');
+Route::get('/customer/{internal_id}', 'MainController@datacustomer')->name('customer-data');

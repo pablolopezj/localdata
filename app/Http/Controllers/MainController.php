@@ -117,7 +117,8 @@ class MainController extends Controller
     }
     public function feedCustomersGodaddy()
     {
-        $results = DB::select('SELECT * FROM clientes_godaddy WHERE Internal_ID != "Internal ID" LIMIT 5500');
+        //$results = DB::select('SELECT * FROM clientes_godaddy WHERE Internal_ID != "Internal ID" LIMIT 5500');
+        $results = DB::select('SELECT * FROM CLIENTES LIMIT 55');
         return ['data' => $results];
     }
     public function customerGodaddy($internal_id)
@@ -139,6 +140,20 @@ class MainController extends Controller
     public function customerSalesOrder($internal_id)
     {
         $results = DB::select('SELECT * FROM sales_orders WHERE Internal_ID = ' . $internal_id);
+        return view('tasks.show-data', compact('results'));
+    }
+
+    //CUSTOMERS
+    public function customers() {
+        return view('customers.customer-all');
+    }
+    public function feedCustomers() {
+        $results = DB::select('SELECT * FROM cliente LIMIT 5500');
+        return ['data' => $results];
+    }
+    public function datacustomer($internal_id)
+    {
+        $results = DB::select('SELECT * FROM cliente WHERE Internal_ID = ' . $internal_id);
         return view('tasks.show-data', compact('results'));
     }
 }
