@@ -1,8 +1,8 @@
 <?php
 
-Route::get('/', 'MainController@index')->name('main');
-Route::get('/feed/task-claro', 'MainController@feedClaro')->name('feed-claro');
-Route::get('/tarea-claro/{internal_id}', 'MainController@tareaClaro')->name('tarea-claro');
+Route::get('/', 'ClaroController@claro')->name('tareas-claro');
+Route::get('/feed/task-claro', 'ClaroController@feedClaro')->name('feed-claro');
+Route::get('/tarea-claro/{internal_id}', 'ClaroController@tareaClaro')->name('tarea-claro');
 
 Route::get('/tareas/en-digital', 'MainController@tareased')->name('tareas-en-digital');
 Route::get('/feed/task-endigital', 'MainController@feedEndigital')->name('feed-en-digital');
