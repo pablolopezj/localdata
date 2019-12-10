@@ -37,26 +37,26 @@
                         <table id="tasks" class="table table-bordered table-hover" style="width:100%">
                             <thead>
                                 <tr>
-                                    <th>Name</th>
-                                    <th>Project</th>
-                                    <th>Start Date</th>
-                                    <th>Status</th>
-                                    <th>Virket ID</th>
-                                    <th>Supervisor Asignado</th>
-                                    <th>Resource Allocated</th>
-                                    <th>Action</th>
+                                    <th id="name">Name</th>
+                                    <th id="Project">Project</th>
+                                    <th id="start_date">Start Date</th>
+                                    <th id="status">Status</th>
+                                    <th id="virket_id">Virket ID</th>
+                                    <th id="supervisor">Supervisor Asignado</th>
+                                    <th id="resource">Resource Allocated</th>
+                                    <th id="action">Action</th>
                                 </tr>
                             </thead>
                             <tfoot>
                                 <tr>
-                                    <th>Name</th>
-                                    <th>Project</th>
-                                    <th>Start Date</th>
-                                    <th>Status</th>
-                                    <th>Virket ID</th>
-                                    <th>Supervisor Asignado</th>
-                                    <th>Resource Allocated</th>
-                                    <th>Action</th>
+                                    <th id="name">Name</th>
+                                    <th id="Project">Project</th>
+                                    <th id="start_date">Start Date</th>
+                                    <th id="status">Status</th>
+                                    <th id="virket_id">Virket ID</th>
+                                    <th id="supervisor">Supervisor Asignado</th>
+                                    <th id="resource">Resource Allocated</th>
+                                    <th id="action">Action</th>
                                 </tr>
                             </tfoot>
                         </table>
@@ -104,7 +104,7 @@
 
         $('#tasks').DataTable({
             "pageLength": 10,
-            "ajax": '/feed/task-claro',
+            "ajax": '/claro/feed',
             "columns": [{
                     "data": "Name"
                 },
@@ -130,7 +130,7 @@
                     "data": null,
                     "bSortable": false,
                     "mRender": function(d) {
-                        return '<a href="/tarea-claro/' + d.Internal_ID + '" ><i class="fas fa-eye"></i></a>';
+                        return '<a href="/claro/tarea/' + d.Internal_ID + '" ><i class="fas fa-eye"></i></a>';
                     }
                 }
             ],
