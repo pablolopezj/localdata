@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\salesOrder;
 use DB;
 
 class MainController extends Controller
@@ -117,7 +118,6 @@ class MainController extends Controller
     }
     public function feedCustomersGodaddy()
     {
-        //$results = DB::select('SELECT * FROM clientes_godaddy WHERE Internal_ID != "Internal ID" LIMIT 5500');
         $results = DB::select('SELECT * FROM CLIENTES LIMIT 55');
         return ['data' => $results];
     }
@@ -132,9 +132,10 @@ class MainController extends Controller
     {
         return view('salesorder.sales-order');
     }
-    public function feedCustomersSalesOrder()
+    public function feedCustomersSalesOrder(Request $request)
     {
-        $results = DB::select('SELECT * FROM sales_orders WHERE Internal_ID != "Internal ID" LIMIT 5500');
+        $sales_order = new SalesOrder();
+        $results = $sales_order::take(5500)->get();
         return ['data' => $results];
     }
     public function customerSalesOrder($internal_id)

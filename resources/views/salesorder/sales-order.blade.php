@@ -136,9 +136,5 @@
 
         });
     });
-
-    function showdata(d) {
-        console.log(d);
-    }
 </script>
 @endsection
