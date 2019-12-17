@@ -8,9 +8,11 @@ Route::prefix('claro')->group(function() {
 });
 
 
-Route::get('/tareas/en-digital', 'MainController@tareased')->name('tareas-en-digital');
-Route::get('/feed/task-endigital', 'MainController@feedEndigital')->name('feed-en-digital');
-Route::get('/tarea-en-digital/{internal_id}', 'MainController@tareaEnDigital')->name('tarea-en-digital');
+Route::prefix('en-digital')->group(function() {
+    Route::get('tareas', 'TasksController@enDigital')->name('en-digital-tasks');
+    Route::get('feed', 'TasksController@feedEnDigital')->name('en-digital-feed');
+    Route::get('tarea/{internal_id}', 'TasksController@tareaEnDigital')->name('en-digital-task');
+});
 
 Route::get('/tareas/goaddy', 'MainController@tareasGodaddy')->name('tareas-godaddy');
 Route::get('/feed/task-godaddy', 'MainController@feedGodaddy')->name('feed-godaddy');
