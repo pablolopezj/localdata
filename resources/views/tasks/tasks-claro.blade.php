@@ -41,7 +41,6 @@
                                     <th id="Project">Project</th>
                                     <th id="start_date">Start Date</th>
                                     <th id="status">Status</th>
-                                    <th id="virket_id">Virket ID</th>
                                     <th id="supervisor">Supervisor Asignado</th>
                                     <th id="resource">Resource Allocated</th>
                                     <th id="action">Action</th>
@@ -53,7 +52,6 @@
                                     <th id="Project">Project</th>
                                     <th id="start_date">Start Date</th>
                                     <th id="status">Status</th>
-                                    <th id="virket_id">Virket ID</th>
                                     <th id="supervisor">Supervisor Asignado</th>
                                     <th id="resource">Resource Allocated</th>
                                     <th id="action">Action</th>
@@ -116,9 +114,6 @@
                 },
                 {
                     "data": "Status"
-                },
-                {
-                    "data": "Virket_ID"
                 },
                 {
                     "data": "Supervisor_Asignado"

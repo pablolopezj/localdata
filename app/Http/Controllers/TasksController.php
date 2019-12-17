@@ -28,7 +28,7 @@ class TasksController extends Controller
     public function tareaClaro($internal_id)
     {
         $results = tareasClaro::where('Internal_ID', $internal_id)->get();
-        return view('tasks.show-data', compact('results'));
+        return view('tasks.show-data-claro', compact('results'));
     }
 
     //EN DIGITAL
