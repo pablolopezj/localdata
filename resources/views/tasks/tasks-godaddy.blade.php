@@ -104,7 +104,7 @@
 
         $('#tasks').DataTable({
             "pageLength": 10,
-            "ajax": '/feed/task-godaddy',
+            "ajax": '/godaddy/feed',
             "columns": [{
                     "data": "Name"
                 },
@@ -130,7 +130,7 @@
                     "data": null,
                     "bSortable": false,
                     "mRender": function(d) {
-                        return '<a href="/tarea-godaddy/' + d.Internal_ID + '" ><i class="fas fa-eye"></i></a>';
+                        return '<a href="/godaddy/tarea/' + d.Internal_ID + '" ><i class="fas fa-eye"></i></a>';
                     }
                 }
             ],

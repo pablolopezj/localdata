@@ -44,13 +44,13 @@ class TasksController extends Controller
     public function tareaEnDigital($internal_id)
     {
         $results = tareasEnDigital::where('Internal_ID', $internal_id)->get();
-        return view('tasks.show-data', compact('results'));
+        return view('tasks.show-data-en-digital', compact('results'));
     }
 
     //TAREAS GODADDY
     public function tareasGodaddy()
     {
-        return view('tasks.tareas-godaddy');
+        return view('tasks.tasks-godaddy');
     }
     public function feedGodaddy()
     {

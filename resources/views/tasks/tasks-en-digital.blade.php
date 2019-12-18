@@ -112,19 +112,19 @@
                     "data": "Project"
                 },
                 {
-                    "data": "Start Date"
+                    "data": "Start_Date"
                 },
                 {
                     "data": "Status"
                 },
                 {
-                    "data": "Virket ID"
+                    "data": "Virket_ID"
                 },
                 {
-                    "data": "Supervisor Asignado"
+                    "data": "Supervisor_Asignado"
                 },
                 {
-                    "data": "Resource Allocated"
+                    "data": "Resource_Allocated"
                 },
                 {
                     "data": null,

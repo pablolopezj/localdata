@@ -14,9 +14,12 @@ Route::prefix('en-digital')->group(function() {
     Route::get('tarea/{internal_id}', 'TasksController@tareaEnDigital')->name('en-digital-task');
 });
 
-Route::get('/tareas/goaddy', 'MainController@tareasGodaddy')->name('tareas-godaddy');
-Route::get('/feed/task-godaddy', 'MainController@feedGodaddy')->name('feed-godaddy');
-Route::get('/tarea-godaddy/{internal_id}', 'MainController@tareaGodaddy')->name('tarea-godaddy');
+
+Route::prefix('godaddy')->group(function () {
+    Route::get('tareas', 'TasksController@tareasGodaddy')->name('tareas-godaddy');
+    Route::get('feed', 'TasksController@feedGodaddy')->name('feed-godaddy');
+    Route::get('/tarea/{internal_id}', 'TasksController@tareaGodaddy')->name('tarea-godaddy');
+});
 
 Route::get('/tickets/goadaddy', 'MainController@ticketsGodaddy')->name('tickets-godaddy');
 Route::get('/feed/tickets-godaddy', 'MainController@feedGodaddyTicket')->name('feed-godaddy-ticket');
