@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\tareasClaro;
 use App\Models\tareasEnDigital;
+use App\Models\TareasGodaddy;
 use DB;
 
 class TasksController extends Controller
@@ -54,12 +55,12 @@ class TasksController extends Controller
     }
     public function feedGodaddy()
     {
-        $results = DB::select('SELECT * FROM tareas_goaddy WHERE Internal_ID != "Internal ID" LIMIT 5500');
+        $results = TareasGodaddy::take(10)->get();
         return ['data' => $results];
     }
     public function tareaGodaddy($internal_id)
     {
-        $results = DB::select('SELECT * FROM tareas_goaddy WHERE Internal_ID = ' . $internal_id);
+        $results = TareasGodaddy::where('Internal_ID', $internal_id)->get();
         return view('tasks.show-data', compact('results'));
     }
 }
