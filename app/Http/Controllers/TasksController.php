@@ -53,10 +53,16 @@ class TasksController extends Controller
     {
         return view('tasks.tasks-godaddy');
     }
-    public function feedGodaddy()
+    public function feedGodaddy(Request $request)
     {
-        $results = TareasGodaddy::take(10)->get();
-        return ['data' => $results];
+        $results = TareasGodaddy::skip($request['start'])->take(10)->get();
+
+        return [
+            'draw' => 1,
+            'recordsTotal' =>  $results->count(),
+            'recordsFiltered' => TareasGodaddy::count(),
+            'data' => $results
+        ];
     }
     public function tareaGodaddy($internal_id)
     {

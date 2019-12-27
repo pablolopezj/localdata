@@ -103,8 +103,9 @@
 
 
         $('#tasks').DataTable({
-            "pageLength": 10,
-            "ajax": '/godaddy/feed',
+            processing: true,
+            serverSide: true,
+            ajax: '/godaddy/feed',
             "columns": [{
                     "data": "Name"
                 },
