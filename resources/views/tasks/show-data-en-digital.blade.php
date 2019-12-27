@@ -5,11 +5,11 @@
     <div class="container">
         <div class="row mb-2">
             <div class="col-sm-6">
-                <h1 class="m-0 text-dark"> Tarea Claro <small></small></h1>
+                <h1 class="m-0 text-dark"> Tarea En Digital <small></small></h1>
             </div><!-- /.col -->
             <div class="col-sm-6">
                 <ol class="breadcrumb float-sm-right">
-                    <li class="breadcrumb-item active"> Claro </li>
+                    <li class="breadcrumb-item active"> En Digital </li>
                 </ol>
             </div><!-- /.col -->
         </div><!-- /.row -->
@@ -27,7 +27,7 @@
                 <section class="content">
                     <div class="card card-primary card-outline">
                         <div class="card-header">
-                            <h3 class="card-title">{{ $results[0]['Name'] }}</h3>
+                            <h3 class="card-title">{{ $results[0]['Nombre'] }}</h3>
                             <div class="card-tools">
                                 <button type="button" class="btn btn-tool" data-card-widget="collapse" data-toggle="tooltip" title="Collapse">
                                     <i class="fas fa-minus"></i></button>
@@ -46,15 +46,15 @@
                                             </tr>
                                             <tr>
                                                 <th>Name:</th>
-                                                <td>{{ $results[0]['Name'] }}</td>
+                                                <td>{{ $results[0]['Nombre'] }}</td>
                                             </tr>
                                             <tr>
                                                 <th>Project</th>
-                                                <td>{{ $results[0]['Project'] }}</td>
+                                                <td>{{ $results[0]['Proyecto'] }}</td>
                                             </tr>
                                             <tr>
-                                                <th>Start date:</th>
-                                                <td>{{ $results[0]['Start_Date'] }}</td>
+                                                <th>Email:</th>
+                                                <td>{{ $results[0]['Email'] }}</td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -63,16 +63,16 @@
                                     <table class="table">
                                         <tbody>
                                             <tr>
-                                                <th>Status:</th>
-                                                <td>{{ $results[0]['Status'] }}</td>
+                                                <th>Phone:</th>
+                                                <td>{{ $results[0]['Phone'] }}</td>
                                             </tr>
                                             <tr>
-                                                <th>Ticket Type</th>
-                                                <td>{{ $results[0]['Ticket_Type'] }}</td>
+                                                <th>Sales Order</th>
+                                                <td>{{ $results[0]['Sales_Order_EnDigital'] }}</td>
                                             </tr>
                                             <tr>
-                                                <th>Virket ID:</th>
-                                                <td>{{ $results[0]['Virket_ID'] }}</td>
+                                                <th>Associated SKU:</th>
+                                                <td>{{ $results[0]['Associated_SKU'] }}</td>
                                             </tr>
                                             <tr>
                                                 <th>Supervisor Asignado</th>

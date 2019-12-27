@@ -39,9 +39,9 @@
                                 <tr>
                                     <th>Name</th>
                                     <th>Project</th>
-                                    <th>Start Date</th>
-                                    <th>Status</th>
-                                    <th>Virket ID</th>
+                                    <th>Email</th>
+                                    <th>Phone</th>
+                                    <th>Sales Order</th>
                                     <th>Supervisor Asignado</th>
                                     <th>Resource Allocated</th>
                                     <th>Action</th>
@@ -51,9 +51,9 @@
                                 <tr>
                                     <th>Name</th>
                                     <th>Project</th>
-                                    <th>Start Date</th>
-                                    <th>Status</th>
-                                    <th>Virket ID</th>
+                                    <th>Email</th>
+                                    <th>Phone</th>
+                                    <th>Sales Order</th>
                                     <th>Supervisor Asignado</th>
                                     <th>Resource Allocated</th>
                                     <th>Action</th>
@@ -106,19 +106,19 @@
             "pageLength": 10,
             "ajax": '/en-digital/feed',
             "columns": [{
-                    "data": "Name"
+                    "data": "Nombre"
                 },
                 {
-                    "data": "Project"
+                    "data": "Proyecto"
                 },
                 {
-                    "data": "Start_Date"
+                    "data": "Email"
                 },
                 {
-                    "data": "Status"
+                    "data": "Phone"
                 },
                 {
-                    "data": "Virket_ID"
+                    "data": "Sales_Order_EnDigital"
                 },
                 {
                     "data": "Supervisor_Asignado"
