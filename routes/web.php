@@ -1,16 +1,25 @@
 <?php
 
-Route::get('/', 'MainController@index')->name('main');
-Route::get('/feed/task-claro', 'MainController@feedClaro')->name('feed-claro');
-Route::get('/tarea-claro/{internal_id}', 'MainController@tareaClaro')->name('tarea-claro');
+Route::get('/', 'TasksController@claro')->name('claro-tasks');
 
-Route::get('/tareas/en-digital', 'MainController@tareased')->name('tareas-en-digital');
-Route::get('/feed/task-endigital', 'MainController@feedEndigital')->name('feed-en-digital');
-Route::get('/tarea-en-digital/{internal_id}', 'MainController@tareaEnDigital')->name('tarea-en-digital');
+Route::prefix('claro')->group(function() {
+    Route::get('feed', 'TasksController@feedClaro')->name('claro-feed');
+    Route::get('tarea/{internal_id}', 'TasksController@tareaClaro')->name('claro-task');
+});
 
-Route::get('/tareas/goaddy', 'MainController@tareasGodaddy')->name('tareas-godaddy');
-Route::get('/feed/task-godaddy', 'MainController@feedGodaddy')->name('feed-godaddy');
-Route::get('/tarea-godaddy/{internal_id}', 'MainController@tareaGodaddy')->name('tarea-godaddy');
+
+Route::prefix('en-digital')->group(function() {
+    Route::get('tareas', 'TasksController@enDigital')->name('en-digital-tasks');
+    Route::get('feed', 'TasksController@feedEnDigital')->name('en-digital-feed');
+    Route::get('tarea/{internal_id}', 'TasksController@tareaEnDigital')->name('en-digital-task');
+});
+
+
+Route::prefix('godaddy')->group(function () {
+    Route::get('tareas', 'TasksController@tareasGodaddy')->name('tareas-godaddy');
+    Route::get('feed', 'TasksController@feedGodaddy')->name('feed-godaddy');
+    Route::get('/tarea/{internal_id}', 'TasksController@tareaGodaddy')->name('tarea-godaddy');
+});
 
 Route::get('/tickets/goadaddy', 'MainController@ticketsGodaddy')->name('tickets-godaddy');
 Route::get('/feed/tickets-godaddy', 'MainController@feedGodaddyTicket')->name('feed-godaddy-ticket');
