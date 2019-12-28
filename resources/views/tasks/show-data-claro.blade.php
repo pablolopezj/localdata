@@ -27,7 +27,7 @@
                 <section class="content">
                     <div class="card card-primary card-outline">
                         <div class="card-header">
-                            <h3 class="card-title">{{ $results[0]['Name'] }}</h3>
+                            <h3 class="card-title">{{ $results[0]['Nombre'] }}</h3>
                             <div class="card-tools">
                                 <button type="button" class="btn btn-tool" data-card-widget="collapse" data-toggle="tooltip" title="Collapse">
                                     <i class="fas fa-minus"></i></button>
@@ -46,15 +46,15 @@
                                             </tr>
                                             <tr>
                                                 <th>Name:</th>
-                                                <td>{{ $results[0]['Name'] }}</td>
+                                                <td>{{ $results[0]['Nombre'] }}</td>
                                             </tr>
                                             <tr>
-                                                <th>Start Date:</th>
-                                                <td>{{ $results[0]['Start_Date'] }}</td>
+                                                <th>Sales_Order:</th>
+                                                <td>{{ $results[0]['Sales_Order'] }}</td>
                                             </tr>
                                             <tr>
-                                                <th>Fecha de cierre:</th>
-                                                <td>{{ $results[0]['Start_Date'] }}</td>
+                                                <th>Associated_SKU:</th>
+                                                <td>{{ $results[0]['Associated_SKU'] }}</td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -63,16 +63,16 @@
                                     <table class="table">
                                         <tbody>
                                             <tr>
-                                                <th>Status:</th>
-                                                <td>{{ $results[0]['Status'] }}</td>
+                                                <th>Proyecto:</th>
+                                                <td>{{ $results[0]['Proyecto'] }}</td>
                                             </tr>
                                             <tr>
-                                                <th>Ticket Type</th>
-                                                <td>{{ $results[0]['Ticket_Type'] }}</td>
+                                                <th>PartnerBU</th>
+                                                <td>{{ $results[0]['PartnerBU'] }}</td>
                                             </tr>
                                             <tr>
-                                                <th>Virket ID:</th>
-                                                <td>{{ $results[0]['Virket_ID'] }}</td>
+                                                <th>GoDaddy_Giro_Empresa_Texto:</th>
+                                                <td>{{ $results[0]['GoDaddy_Giro_Empresa_Texto'] }}</td>
                                             </tr>
                                             <tr>
                                                 <th>Supervisor Asignado</th>

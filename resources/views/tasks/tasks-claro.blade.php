@@ -39,8 +39,8 @@
                                 <tr>
                                     <th id="name">Name</th>
                                     <th id="Project">Project</th>
-                                    <th id="start_date">Start Date</th>
-                                    <th id="status">Status</th>
+                                    <th id="start_date">Sales_Order</th>
+                                    <th id="status">Associated_SKU</th>
                                     <th id="supervisor">Supervisor Asignado</th>
                                     <th id="resource">Resource Allocated</th>
                                     <th id="action">Action</th>
@@ -50,8 +50,8 @@
                                 <tr>
                                     <th id="name">Name</th>
                                     <th id="Project">Project</th>
-                                    <th id="start_date">Start Date</th>
-                                    <th id="status">Status</th>
+                                    <th id="start_date">Sales_Order</th>
+                                    <th id="status">Associated_SKU</th>
                                     <th id="supervisor">Supervisor Asignado</th>
                                     <th id="resource">Resource Allocated</th>
                                     <th id="action">Action</th>
@@ -104,16 +104,16 @@
             "pageLength": 10,
             "ajax": '/claro/feed',
             "columns": [{
-                    "data": "Name"
+                    "data": "Nombre"
                 },
                 {
-                    "data": "Project"
+                    "data": "Proyecto"
                 },
                 {
-                    "data": "Start_Date"
+                    "data": "Sales_Order"
                 },
                 {
-                    "data": "Status"
+                    "data": "Associated_SKU"
                 },
                 {
                     "data": "Supervisor_Asignado"
