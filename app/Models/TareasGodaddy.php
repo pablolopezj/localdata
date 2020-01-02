@@ -6,5 +6,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class TareasGodaddy extends Model
 {
-    protected $table = 'tareas_goaddy';
+    protected $table = 'tareas_godaddy';
 }

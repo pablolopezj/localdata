@@ -16,7 +16,7 @@
             <div class="col-sm-6">
                 <ol class="breadcrumb float-sm-right">
                     <li class="breadcrumb-item"><a href="#">Tareas</a></li>
-                    <li class="breadcrumb-item active">Claro </li>
+                    <li class="breadcrumb-item active">En Digital </li>
                 </ol>
             </div><!-- /.col -->
         </div><!-- /.row -->
@@ -31,7 +31,7 @@
                 <!-- start grid -->
                 <div class="card">
                     <div class="card-header">
-                        <h3 class="card-title">Buscar Tareas Claro</h3>
+                        <h3 class="card-title">Buscar Tareas En Digital</h3>
                     </div>
                     <div class="card-body">
                         <table id="tasks" class="table table-bordered table-hover" style="width:100%">

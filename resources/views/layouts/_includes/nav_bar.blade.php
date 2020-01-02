@@ -19,6 +19,7 @@
                         <li><a href="/" class="dropdown-item">Tareas Claro </a></li>
                         <li><a href="/en-digital/tareas" class="dropdown-item">Tareas En Digital</a></li>
                         <li><a href="/godaddy/tareas" class="dropdown-item">Tareas GoDaddy</a></li>
+                        <li><a href="/ventasclick/tareas" class="dropdown-item">Tareas Ventas Click</a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
@@ -26,6 +27,7 @@
                     <ul aria-labelledby="dropdownSubMenu1" class="dropdown-menu border-0 shadow">
                         <li><a href="/tickets/endigital" class="dropdown-item">Tickets En Digital</a></li>
                         <li><a href="/tickets/goadaddy" class="dropdown-item">Tickets GoDaddy</a></li>
+                        <li><a href="/tickets/ventasclick" class="dropdown-item">Tickets Ventas Click</a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown">

@@ -31,17 +31,17 @@
                 <!-- start grid -->
                 <div class="card">
                     <div class="card-header">
-                        <h3 class="card-title">Buscar Tareas Claro</h3>
+                        <h3 class="card-title">Buscar Tareas Godaddy</h3>
                     </div>
                     <div class="card-body">
                         <table id="tasks" class="table table-bordered table-hover" style="width:100%">
                             <thead>
                                 <tr>
                                     <th>Name</th>
-                                    <th>Project</th>
+                                    <th>Email</th>
                                     <th>Start Date</th>
                                     <th>Status</th>
-                                    <th>Virket ID</th>
+                                    <th>Associated SKU</th>
                                     <th>Supervisor Asignado</th>
                                     <th>Resource Allocated</th>
                                     <th>Action</th>
@@ -50,8 +50,8 @@
                             <tfoot>
                                 <tr>
                                     <th>Name</th>
-                                    <th>Project</th>
-                                    <th>Start Date</th>
+                                    <th>Email</th>
+                                    <th>Associated SKU</th>
                                     <th>Status</th>
                                     <th>Virket ID</th>
                                     <th>Supervisor Asignado</th>
@@ -107,16 +107,16 @@
             serverSide: true,
             ajax: '/godaddy/feed',
             "columns": [{
-                    "data": "Name"
+                    "data": "Nombre"
                 },
                 {
-                    "data": "Project"
+                    "data": "Email"
                 },
                 {
-                    "data": "Start_Date"
+                    "data": "Associated_SKU"
                 },
                 {
-                    "data": "Status"
+                    "data": "Project_Task_Status"
                 },
                 {
                     "data": "Virket_ID"

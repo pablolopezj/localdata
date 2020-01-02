@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\tareasClaro;
 use App\Models\tareasEnDigital;
 use App\Models\TareasGodaddy;
+use App\Models\TareasVentasClick;
 use DB;
 
 class TasksController extends Controller
@@ -67,6 +68,22 @@ class TasksController extends Controller
     public function tareaGodaddy($internal_id)
     {
         $results = TareasGodaddy::where('Internal_ID', $internal_id)->get();
-        return view('tasks.show-data', compact('results'));
+        return view('tasks.show-data-godaddy', compact('results'));
+    }
+
+    //TAREAS VENTAS CLICK
+    public function tareasVentasClick()
+    {
+        return view('tasks.tasks-ventasclick');
+    }
+    public function feedVentasClick(Request $request)
+    {
+        $results = tareasVentasClick::all();
+        return ['data' => $results];
+    }
+    public function tareaVentasClick($internal_id)
+    {
+        $results = TareasVentasClick::where('Internal_ID', $internal_id)->get();
+        return view('tasks.show-data-ventasclick', compact('results'));
     }
 }

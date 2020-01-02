@@ -21,6 +21,12 @@ Route::prefix('godaddy')->group(function () {
     Route::get('/tarea/{internal_id}', 'TasksController@tareaGodaddy')->name('tarea-godaddy');
 });
 
+Route::prefix('ventasclick')->group(function () {
+    Route::get('tareas', 'TasksController@tareasVentasClick')->name('tareas-ventasclick');
+    Route::get('feed', 'TasksController@feedVentasClick')->name('feed-ventasclick');
+    Route::get('/tarea/{internal_id}', 'TasksController@tareaVentasClick')->name('tarea-ventasclick');
+});
+
 Route::get('/tickets/goadaddy', 'MainController@ticketsGodaddy')->name('tickets-godaddy');
 Route::get('/feed/tickets-godaddy', 'MainController@feedGodaddyTicket')->name('feed-godaddy-ticket');
 Route::get('/ticket-godaddy/{internal_id}', 'MainController@ticketGodaddy')->name('ticket-godaddy');
