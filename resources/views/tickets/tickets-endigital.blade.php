@@ -11,12 +11,12 @@
     <div class="container">
         <div class="row mb-2">
             <div class="col-sm-6">
-                <h1 class="m-0 text-dark"> Busqueda <small>Tickets Godaddy</small></h1>
+                <h1 class="m-0 text-dark"> Busqueda <small>Tickets En Digital</small></h1>
             </div><!-- /.col -->
             <div class="col-sm-6">
                 <ol class="breadcrumb float-sm-right">
                     <li class="breadcrumb-item"><a href="#">Tickets</a></li>
-                    <li class="breadcrumb-item active">Godaddy </li>
+                    <li class="breadcrumb-item active">En Digital </li>
                 </ol>
             </div><!-- /.col -->
         </div><!-- /.row -->
@@ -31,31 +31,31 @@
                 <!-- start grid -->
                 <div class="card">
                     <div class="card-header">
-                        <h3 class="card-title">Buscar Tickets Godaddy</h3>
+                        <h3 class="card-title">Buscar Tickets En Digital</h3>
                     </div>
                     <div class="card-body">
                         <table id="tasks" class="table table-bordered table-hover" style="width:100%">
                             <thead>
                                 <tr>
-                                    <th>Number</th>
-                                    <th>Subject</th>
-                                    <th>Company</th>
-                                    <th>Status</th>
-                                    <th>Virket ID</th>
-                                    <th>Assigned To</th>
-                                    <th>Giro Empresa</th>
+                                    <th>Numero</th>
+                                    <th>Empresa</th>
+                                    <th>Email</th>
+                                    <th>Perfil</th>
+                                    <th>Sales Order</th>
+                                    <th>Origen Oportunidad</th>
+                                    <th>Resource Allocated</th>
                                     <th>Action</th>
                                 </tr>
                             </thead>
                             <tfoot>
                                 <tr>
-                                    <th>Number</th>
-                                    <th>Subject</th>
-                                    <th>Company</th>
-                                    <th>Status</th>
-                                    <th>Virket ID</th>
-                                    <th>Assigned To</th>
-                                    <th>Giro Empresa</th>
+                                    <th>Numero</th>
+                                    <th>Empresa</th>
+                                    <th>Email</th>
+                                    <th>Perfil</th>
+                                    <th>Sales Order</th>
+                                    <th>Origen Oportunidad</th>
+                                    <th>Resource Allocated</th>
                                     <th>Action</th>
                                 </tr>
                             </tfoot>
@@ -104,33 +104,33 @@
 
         $('#tasks').DataTable({
             "pageLength": 10,
-            "ajax": '/feed/tickets-endigital',
+            "ajax": '/en-digital/feed/ticket',
             "columns": [{
-                    "data": "Number"
+                    "data": "Numero"
                 },
                 {
-                    "data": "Subject"
+                    "data": "Empresa"
                 },
                 {
-                    "data": "Company"
+                    "data": "Email"
                 },
                 {
-                    "data": "Status"
+                    "data": "Perfil"
                 },
                 {
-                    "data": "Virket ID"
+                    "data": "Sales_Order"
                 },
                 {
-                    "data": "Assigned To"
+                    "data": "Origen_Oport"
                 },
                 {
-                    "data": "GoDaddy Giro Empresa Texto"
+                    "data": "Asignado_a"
                 },
                 {
                     "data": null,
                     "bSortable": false,
                     "mRender": function(d) {
-                        return '<a href="/ticket-endigital/' + d.Internal_ID + '" ><i class="fas fa-eye"></i></a>';
+                        return '<a href="/en-digital/ticket/' + d.Internal_ID + '" ><i class="fas fa-eye"></i></a>';
                     }
                 }
             ],

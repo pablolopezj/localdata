@@ -10,8 +10,11 @@ Route::prefix('claro')->group(function() {
 
 Route::prefix('en-digital')->group(function() {
     Route::get('tareas', 'TasksController@enDigital')->name('en-digital-tasks');
+    Route::get('tickets', 'TicketController@enDigital')->name('en-digital-tickets');
     Route::get('feed', 'TasksController@feedEnDigital')->name('en-digital-feed');
+    Route::get('feed/ticket', 'TicketController@feedEnDigital')->name('en-digital-feed-ticket');
     Route::get('tarea/{internal_id}', 'TasksController@tareaEnDigital')->name('en-digital-task');
+    Route::get('ticket/{internal_id}', 'TicketController@ticketEndigital')->name('en-digital-ticket');
 });
 
 
