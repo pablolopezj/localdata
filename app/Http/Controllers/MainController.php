@@ -19,10 +19,10 @@ class MainController extends Controller
         $results = SalesOrder::take(5500)->get();
         return ['data' => $results];
     }
-    public function customerSalesOrder($internal_id)
+    public function showInfoSalesOrder($internal_id)
     {
         $results = DB::select('SELECT * FROM sales_orders WHERE Internal_ID = ' . $internal_id);
-        return view('tasks.show-data', compact('results'));
+        return view('salesorder.show-data-sales-order', compact('results'));
     }
 
     //CUSTOMERS

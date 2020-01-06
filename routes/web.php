@@ -36,7 +36,7 @@ Route::prefix('ventasclick')->group(function () {
 
 Route::get('/salesorder', 'MainController@customersSalesOrder')->name('sales-order');
 Route::get('/feed/salesorder', 'MainController@feedCustomersSalesOrder')->name('feed-sales-oreder');
-Route::get('/salesorder/{internal_id}', 'MainController@customerSalesOrder')->name('sales-order-data');
+Route::get('/salesorder/{internal_id}', 'MainController@showInfoSalesOrder')->name('sales-order-data');
 
 /** Clientes  */
 Route::get('/customers', 'MainController@customers')->name('customer');
