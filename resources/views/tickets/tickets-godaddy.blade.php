@@ -104,33 +104,33 @@
 
         $('#tasks').DataTable({
             "pageLength": 10,
-            "ajax": '/feed/tickets-godaddy',
+            "ajax": '/godaddy/feed/ticket',
             "columns": [{
-                    "data": "Number"
+                    "data": "Numero"
                 },
                 {
-                    "data": "Subject"
+                    "data": "Asunto"
                 },
                 {
-                    "data": "Company"
+                    "data": "Empresa"
                 },
                 {
-                    "data": "Status"
+                    "data": "Estado"
                 },
                 {
-                    "data": "Virket ID"
+                    "data": "Virket_ID"
                 },
                 {
-                    "data": "Assigned To"
+                    "data": "Asignado_a"
                 },
                 {
-                    "data": "GoDaddy Giro Empresa Texto"
+                    "data": "GoDaddy_Giro_Empresa_Texto"
                 },
                 {
                     "data": null,
                     "bSortable": false,
                     "mRender": function(d) {
-                        return '<a href="/ticket-godaddy/' + d.Internal_ID + '" ><i class="fas fa-eye"></i></a>';
+                        return '<a href="/godaddy/ticket/' + d.Internal_ID + '" ><i class="fas fa-eye"></i></a>';
                     }
                 }
             ],

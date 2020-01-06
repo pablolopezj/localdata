@@ -39,10 +39,10 @@
                                     <th>Name</th>
                                     <th>Date</th>
                                     <th>Period</th>
-                                    <th>RFC</th>
+                                    <th>Representante</th>
                                     <th>Virket_ID</th>
                                     <th>Account</th>
-                                    <th>Memo</th>
+                                    <th>Importe</th>
                                     <th>Action</th>
                                 </tr>
                             </thead>
@@ -51,10 +51,10 @@
                                     <th>Name</th>
                                     <th>Date</th>
                                     <th>Period</th>
-                                    <th>RFC</th>
+                                    <th>Representante</th>
                                     <th>Virket_ID</th>
                                     <th>Account</th>
-                                    <th>Memo</th>
+                                    <th>Importe</th>
                                     <th>Action</th>
                                 </tr>
                             </tfoot>
@@ -105,25 +105,25 @@
             "pageLength": 10,
             "ajax": '/feed/salesorder',
             "columns": [{
-                    "data": "Name"
+                    "data": "Nombre"
                 },
                 {
-                    "data": "Date"
+                    "data": "Fecha"
                 },
                 {
-                    "data": "Period"
+                    "data": "Periodo"
                 },
                 {
-                    "data": "RFC"
+                    "data": "Representante_de_ventas"
                 },
                 {
                     "data": "Virket_ID"
                 },
                 {
-                    "data": "Account"
+                    "data": "Cuenta"
                 },
                 {
-                    "data": "Memo"
+                    "data": "Importe"
                 },
                 {
                     "data": null,

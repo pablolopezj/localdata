@@ -37,27 +37,27 @@
                         <table id="tasks" class="table table-bordered table-hover" style="width:100%">
                             <thead>
                                 <tr>
-                                    <th>ID Dash</th>
+                                    <th>ID</th>
                                     <th>Nombre</th>
                                     <th>Email</th>
                                     <th>Phone</th>
                                     <th>Representante</th>
                                     <th>Marca de adquisición</th>
                                     <th>BU</th>
-                                    <th>Fecha</th>
+                                    <th>Fecha venta</th>
                                     <th>Action</th>
                                 </tr>
                             </thead>
                             <tfoot>
                                 <tr>
-                                    <th>ID Dash</th>
+                                    <th>ID</th>
                                     <th>Nombre</th>
                                     <th>Email</th>
                                     <th>Phone</th>
                                     <th>Representante</th>
                                     <th>Marca de adquisición</th>
                                     <th>BU</th>
-                                    <th>Fecha</th>
+                                    <th>Fecha venta</th>
                                     <th>Action</th>
                                 </tr>
                             </tfoot>
@@ -108,7 +108,7 @@
             "pageLength": 10,
             "ajax": '/feed/customers',
             "columns": [{
-                    "data": "ID_Dash"
+                    "data": "Internal_ID"
                 },
                 {
                     "data": "Nombre"

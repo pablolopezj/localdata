@@ -27,14 +27,14 @@ class TicketController extends Controller
     {
         return view('tickets.tickets-godaddy');
     }
-    public function feedGodaddyTicket()
-    {
-        $results = DB::select('SELECT * FROM tickets_godaddy_v2 WHERE Internal_ID != "Internal ID" LIMIT 5500');
+    public function feedGodaddy()
+    {     
+        $results = DB::select('SELECT * FROM tickets_godaddy');
         return ['data' => $results];
     }
     public function ticketGodaddy($internal_id)
     {
-        $results = DB::select('SELECT * FROM tickets_godaddy_v2 WHERE Internal_ID = ' . $internal_id);
-        return view('tickets.show-data', compact('results'));
+        $results = DB::select('SELECT * FROM tickets_godaddy WHERE Internal_ID = ' . $internal_id);
+        return view('tickets.show-data-godaddy', compact('results'));
     }
 }
