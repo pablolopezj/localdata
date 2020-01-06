@@ -53,6 +53,10 @@
                                                 <td>{{ $results[0]->Periodo }}</td>
                                             </tr>
                                             <tr>
+                                                <th>Periodo fiscal:</th>
+                                                <td>{{ $results[0]->Periodo_fiscal }}</td>
+                                            </tr>
+                                            <tr>
                                                 <th>Número de documento:</th>
                                                 <td>{{ $results[0]->Numero_de_documento }}</td>
                                             </tr>
