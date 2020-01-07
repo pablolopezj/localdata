@@ -57,11 +57,11 @@
                                                 <td>{{ $results[0]['Business_Partner'] }}</td>
                                             </tr>
                                             <tr>
-                                                <th>Fecha_de_inicio:</th>
+                                                <th>Fecha de inicio:</th>
                                                 <td>{{ $results[0]['Fecha_de_inicio'] }}</td>
                                             </tr>
                                             <tr>
-                                                <th>Fecha_de_finalizacion:</th>
+                                                <th>Fecha de finalización:</th>
                                                 <td>{{ $results[0]['Fecha_de_finalizacion'] }}</td>
                                             </tr>
                                             <tr>
@@ -84,23 +84,23 @@
                                                 <td>{{ $results[0]['Phone'] }}</td>
                                             </tr>
                                             <tr>
-                                                <th>Sales_Order_EnDigital:</th>
+                                                <th>Sales Order:</th>
                                                 <td>{{ $results[0]['Sales_Order_EnDigital'] }}</td>
                                             </tr>
                                             <tr>
-                                                <th>Tipo_de_restriccion:</th>
+                                                <th>Tipo de restriccion:</th>
                                                 <td>{{ $results[0]['Tipo_de_restriccion'] }}</td>
                                             </tr>
                                             <tr>
-                                                <th>Associated_SKU:</th>
+                                                <th>Associated SKU:</th>
                                                 <td>{{ $results[0]['Associated_SKU'] }}</td>
                                             </tr>
                                             <tr>
-                                                <th>Resource_Allocated:</th>
+                                                <th>Resource Allocated:</th>
                                                 <td>{{ $results[0]['Resource_Allocated'] }}</td>
                                             </tr>
                                             <tr>
-                                                <th>Supervisor_Asignado:</th>
+                                                <th>Supervisor Asignado:</th>
                                                 <td>{{ $results[0]['Supervisor_Asignado'] }}</td>
                                             </tr>
 
@@ -121,22 +121,22 @@
                                                 <div class="col-md-6">
                                                     <ul class="list-group list-group-unbordered mb-3">
                                                         <li class="list-group-item">
-                                                            <b>Line_of_Business:</b> <a class="float-right">{{ $results[0]['Line_of_Business'] }}</a>
+                                                            <b>Line of Business:</b> <a class="float-right">{{ $results[0]['Line_of_Business'] }}</a>
                                                         </li>
                                                         <li class="list-group-item">
                                                             <b>Slogan:</b> <a class="float-right">{{ $results[0]['Slogan'] }}</a>
                                                         </li>
                                                         <li class="list-group-item">
-                                                            <b>Call_to_action:</b> <a class="float-right">{{ $results[0]['Call_to_action'] }}</a>
+                                                            <b>Call to action:</b> <a class="float-right">{{ $results[0]['Call_to_action'] }}</a>
                                                         </li>
                                                         <li class="list-group-item">
                                                             <b>Logos:</b> <a class="float-right">{{ $results[0]['Logos'] }}</a>
                                                         </li>
                                                         <li class="list-group-item">
-                                                            <b>E-mail_for_Contact_Form:</b> <a class="float-right">{{ $results[0]['E-mail_for_Contact_Form'] }}</a>
+                                                            <b>E-mail for Contact Form:</b> <a class="float-right">{{ $results[0]['E-mail_for_Contact_Form'] }}</a>
                                                         </li>
                                                         <li class="list-group-item">
-                                                            <b>Products_and_Services:</b> <a class="float-right">{{ $results[0]['Products_and_Services'] }}</a>
+                                                            <b>Products and Services:</b> <a class="float-right">{{ $results[0]['Products_and_Services'] }}</a>
                                                         </li>
                                                         <li class="list-group-item">
                                                             <b>Benefits:</b> <a class="float-right">{{ $results[0]['Benefits'] }}</a>
@@ -145,25 +145,25 @@
                                                             <b>Testimonials:</b> <a class="float-right">{{ $results[0]['Testimonials'] }}</a>
                                                         </li>
                                                         <li class="list-group-item">
-                                                            <b>Long_Description:</b> <a class="float-right">{{ $results[0]['Long_Description'] }}</a>
+                                                            <b>Long Description:</b> <a class="float-right">{{ $results[0]['Long_Description'] }}</a>
                                                         </li>
                                                         <li class="list-group-item">
                                                             <b>Promo:</b> <a class="float-right">{{ $results[0]['Promo'] }}</a>
                                                         </li>
                                                         <li class="list-group-item">
-                                                            <b>City_Main:</b> <a class="float-right">{{ $results[0]['City_Main'] }}</a>
+                                                            <b>City Main:</b> <a class="float-right">{{ $results[0]['City_Main'] }}</a>
                                                         </li>
                                                         <li class="list-group-item">
-                                                            <b>Ciudades_de_cobertura:</b> <a class="float-right">{{ $results[0]['Ciudades_de_cobertura'] }}</a>
+                                                            <b>Ciudades de cobertura:</b> <a class="float-right">{{ $results[0]['Ciudades_de_cobertura'] }}</a>
                                                         </li>
                                                         <li class="list-group-item">
-                                                            <b>Horarios_de_atencion:</b> <a class="float-right">{{ $results[0]['Horarios_de_atencion'] }}</a>
+                                                            <b>Horarios de atencion:</b> <a class="float-right">{{ $results[0]['Horarios_de_atencion'] }}</a>
                                                         </li>
                                                         <li class="list-group-item">
-                                                            <b>Metodos_de_pago:</b> <a class="float-right">{{ $results[0]['Metodos_de_pago'] }}</a>
+                                                            <b>Metodos de pago:</b> <a class="float-right">{{ $results[0]['Metodos_de_pago'] }}</a>
                                                         </li>
                                                         <li class="list-group-item">
-                                                            <b>Comentarios_adicionales:</b> <a class="float-right">{{ $results[0]['Comentarios_adicionales'] }}</a>
+                                                            <b>Comentarios adicionales:</b> <a class="float-right">{{ $results[0]['Comentarios_adicionales'] }}</a>
                                                         </li>
 
                                                     </ul>
@@ -171,46 +171,46 @@
                                                 <div class="col-md-6">
                                                     <ul class="list-group list-group-unbordered mb-3">
                                                         <li class="list-group-item">
-                                                            <b>1_Cambio_adicional:</b> <a class="float-right">{{ $results[0]['1_Cambio_adicional'] }}</a>
+                                                            <b>Cambio adicional:</b> <a class="float-right">{{ $results[0]['1_Cambio_adicional'] }}</a>
                                                         </li>
                                                         <li class="list-group-item">
-                                                            <b>Cambios_adicionales:</b> <a class="float-right">{{ $results[0]['3_Cambios_adicionales'] }}</a>
+                                                            <b>Cambios adicionales:</b> <a class="float-right">{{ $results[0]['3_Cambios_adicionales'] }}</a>
                                                         </li>
                                                         <li class="list-group-item">
-                                                            <b>Google_my_business:</b> <a class="float-right">{{ $results[0]['Google_my_business'] }}</a>
+                                                            <b>Google my business:</b> <a class="float-right">{{ $results[0]['Google_my_business'] }}</a>
                                                         </li>
                                                         <li class="list-group-item">
                                                             <b>Paqueteanimes:</b> <a class="float-right">{{ $results[0]['Paqueteanimes'] }}</a>
                                                         </li>
                                                         <li class="list-group-item">
-                                                            <b>Correo_profesional:</b> <a class="float-right">{{ $results[0]['Correo_profesional'] }}</a>
+                                                            <b>Correo profesional:</b> <a class="float-right">{{ $results[0]['Correo_profesional'] }}</a>
                                                         </li>
                                                         <li class="list-group-item">
-                                                            <b>Video_anuncio:</b> <a class="float-right">{{ $results[0]['Video_anuncio'] }}</a>
+                                                            <b>Video anuncio:</b> <a class="float-right">{{ $results[0]['Video_anuncio'] }}</a>
                                                         </li>
                                                         <li class="list-group-item">
-                                                            <b>Pestaña_adicional:</b> <a class="float-right">{{ $results[0]['Pestaña_adicional'] }}</a>
+                                                            <b>Pestaña adicional:</b> <a class="float-right">{{ $results[0]['Pestaña_adicional'] }}</a>
                                                         </li>
                                                         <li class="list-group-item">
                                                             <b>Dominio:</b> <a class="float-right">{{ $results[0]['Dominio'] }}</a>
                                                         </li>
                                                         <li class="list-group-item">
-                                                            <b>Bloque_de_40_imgs_adicionales:</b> <a class="float-right">{{ $results[0]['Bloque_de_40_imgs_adicionales'] }}</a>
+                                                            <b>Bloque de 40 Imgs Adicionales:</b> <a class="float-right">{{ $results[0]['Bloque_de_40_imgs_adicionales'] }}</a>
                                                         </li>
                                                         <li class="list-group-item">
-                                                            <b>Alojamiento_por_anio:</b> <a class="float-right">{{ $results[0]['Alojamiento_por_anio'] }}</a>
+                                                            <b>Alojamiento por año:</b> <a class="float-right">{{ $results[0]['Alojamiento_por_anio'] }}</a>
                                                         </li>
                                                         <li class="list-group-item">
-                                                            <b>Mi_negocio_impreso:</b> <a class="float-right">{{ $results[0]['Mi_negocio_impreso'] }}</a>
+                                                            <b>Mi negocio impreso:</b> <a class="float-right">{{ $results[0]['Mi_negocio_impreso'] }}</a>
                                                         </li>
                                                         <li class="list-group-item">
-                                                            <b>Facebook_Fanpage:</b> <a class="float-right">{{ $results[0]['Facebook_Fanpage'] }}</a>
+                                                            <b>Facebook Fanpage:</b> <a class="float-right">{{ $results[0]['Facebook_Fanpage'] }}</a>
                                                         </li>
                                                         <li class="list-group-item">
-                                                            <b>Toppings_Comentarios:</b> <a class="float-right">{{ $results[0]['Toppings_Comentarios'] }}</a>
+                                                            <b>Toppings Comentarios:</b> <a class="float-right">{{ $results[0]['Toppings_Comentarios'] }}</a>
                                                         </li>
                                                         <li class="list-group-item">
-                                                            <b>Change_is_because_of_a_mistake:</b> <a class="float-right">{{ $results[0]['Change_is_because_of_a_mistake'] }}</a>
+                                                            <b>Change is because of a mistake:</b> <a class="float-right">{{ $results[0]['Change_is_because_of_a_mistake'] }}</a>
                                                         </li>
 
                                                     </ul>
