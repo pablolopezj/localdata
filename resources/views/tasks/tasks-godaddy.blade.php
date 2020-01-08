@@ -39,9 +39,9 @@
                                 <tr>
                                     <th>Name</th>
                                     <th>Email</th>
-                                    <th>Start Date</th>
-                                    <th>Status</th>
                                     <th>Associated SKU</th>
+                                    <th>Status</th>
+                                    <th>Virket ID</th>
                                     <th>Supervisor Asignado</th>
                                     <th>Resource Allocated</th>
                                     <th>Action</th>
@@ -77,7 +77,7 @@
 
 
         $('#tasks').DataTable({
-            processing: false,
+            processing: true,
             serverSide: true,
             ajax: '/godaddy/feed',
             "columns": [{
@@ -112,9 +112,5 @@
 
         });
     });
-
-    function showdata(d) {
-        console.log(d);
-    }
 </script>
 @endsection

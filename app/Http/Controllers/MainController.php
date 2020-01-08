@@ -16,9 +16,41 @@ class MainController extends Controller
     }
     public function feedCustomersSalesOrder(Request $request)
     {
-        $results = SalesOrder::take(5500)->get();
-        return ['data' => $results];
+        $search  = $this->getSearch($request);
+        if (!is_null($search)) {
+            $results = SalesOrder::where('Virket_ID', $search)
+                ->orWhere('Nombre', $search)
+                ->orWhere('Fecha', $search)
+                ->orWhere('Periodo', $search)
+                ->orWhere('Representante_de_ventas', $search)
+                ->orWhere('Cuenta', $search)
+                ->orWhere('Importe', $search)
+                ->skip($request['start'])
+                ->take(10)
+                ->get();
+            $format_array = [
+                'recordsTotal' =>  $results->count(),
+                'recordsFiltered' => SalesOrder::count(),
+                'data' => $results
+            ];
+        } else {
+            $results = SalesOrder::skip($request['start'])->take(10)->get();
+            $format_array = [
+                'recordsTotal' =>  $results->count(),
+                'recordsFiltered' => SalesOrder::count(),
+                'data' => $results
+            ];
+        }
+        return $format_array;
     }
+    private function getSearch($request)
+    {
+        foreach ($request->request as $key => $row) {
+            if ($key == 'search') {
+                return $row['value'];
+            }
+        }
+    } 
     public function showInfoSalesOrder($internal_id)
     {
         $results = DB::select('SELECT * FROM sales_orders WHERE Internal_ID = ' . $internal_id);

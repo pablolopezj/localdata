@@ -56,15 +56,40 @@ class TasksController extends Controller
     }
     public function feedGodaddy(Request $request)
     {
-        $results = TareasGodaddy::skip($request['start'])->take(10)->get();
+        $search  = $this->getSearch($request);
+        
+        if ( !is_null($search) ) {
+            $results = TareasGodaddy::where('Email', $search )
+                ->orWhere('Virket_ID', $search)
+                ->orWhere('Project_Task_Status', $search)
+                ->skip($request['start'])
+                ->take(10)
+                ->get();
 
-        return [
-            'draw' => 1,
-            'recordsTotal' =>  $results->count(),
-            'recordsFiltered' => TareasGodaddy::count(),
-            'data' => $results
-        ];
+            $format_array = [
+                'recordsTotal' =>  $results->count(),
+                'recordsFiltered' => TareasGodaddy::count(),
+                'data' => $results
+            ];
+        } else {
+            $results = TareasGodaddy::skip($request['start'])->take(10)->get();
+            $format_array = [
+                'recordsTotal' =>  $results->count(),
+                'recordsFiltered' => TareasGodaddy::count(),
+                'data' => $results
+            ];
+        }
+
+        return $format_array;
     }
+
+    private function getSearch($request) {
+        foreach ($request->request as $key => $row) {
+            if ($key == 'search') {
+                return $row['value'];
+            }
+        } 
+    } 
     public function tareaGodaddy($internal_id)
     {
         $results = TareasGodaddy::where('Internal_ID', $internal_id)->get();
