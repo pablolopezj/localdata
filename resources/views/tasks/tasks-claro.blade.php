@@ -3,6 +3,17 @@
 @section('styles')
 <link href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css" rel="stylesheet" type="text/css" />
 <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+<style >
+    .dxls {
+        display: block;
+        width: 100%;
+        text-align: right;
+    }
+    .dxls img {
+        width: 2rem;
+        height: 2rem;
+    }
+</style>
 @endsection
 
 
@@ -32,6 +43,11 @@
                 <div class="card">
                     <div class="card-header">
                         <h3 class="card-title">Buscar Tareas Claro</h3>
+                        <div class="dxls">
+                            <a href="#" alt="Download xls">
+                                 <img src="/assets/img/descargaxls.png" alt="Descargar excel" >
+                            </a>
+                        </div>
                     </div>
                     <div class="card-body">
                         <table id="tasks" class="table table-bordered table-hover" style="width:100%">
