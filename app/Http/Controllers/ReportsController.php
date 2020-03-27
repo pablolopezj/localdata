@@ -7,7 +7,8 @@ use Maatwebsite\Excel\Excel;
 use App\Exports\TareasClaroExport;
 use App\Exports\TareasEnDigitalExport;
 use App\Exports\TareasVentasClickExport;
-use App\Models\TareasVentasClick;
+use App\Exports\TicketGodaddyExport;
+use App\Exports\TicketEnDigitalExport;
 
 
 class ReportsController extends Controller
@@ -31,5 +32,14 @@ class ReportsController extends Controller
     public function reportTaskVentasClick(Excel $excel){
         $name = 'Tareas_en_digital.xlsx';
         return $excel->download(new TareasVentasClickExport, $name);
+    }
+
+    public function reportTicketEnDigital(Excel $excel) {
+        $name = 'Ticket_en_digital.xlsx';
+        return $excel->download(new TicketEnDigitalExport, $name);
+    }
+    public function reportTicketGodaddy(Excel $excel) {
+        $name = 'Ticket_goaddady.xlsx';
+        return $excel->download(new TicketGodaddyExport, $name);
     }
 }

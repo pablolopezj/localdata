@@ -13,7 +13,9 @@ Route::group(['middleware' => 'auth'], function () {
     Route::prefix('report')->group(function() {
         Route::get('/tasks-claro', 'ReportsController@reportTask')->name('report-claro-task');
         Route::get('/tasks-en-digital', 'ReportsController@reportTaskEnDigital')->name('report-endigital-task');
+        Route::get('/ticket-en-digital', 'ReportsController@reportTicketEnDigital')->name('report-endigital-tiecket');
         Route::get('/tasks-godaddy', 'ReportsController@reportTaskGodaddy')->name('report-godaddy-task');
+        Route::get('/ticket-godaddy', 'ReportsController@reportTicketEnDigital')->name('report-godaddy-tiecket');
         Route::get('/tasks-ventas-click', 'ReportsController@reportTaskVentasClick')->name('report-vclick-task');
     });
 
