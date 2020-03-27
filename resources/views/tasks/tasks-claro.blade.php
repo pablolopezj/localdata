@@ -44,7 +44,7 @@
                     <div class="card-header">
                         <h3 class="card-title">Buscar Tareas Claro</h3>
                         <div class="dxls">
-                            <a href="#" alt="Download xls">
+                            <a href="/report/tasks-claro" alt="Download xls">
                                  <img src="/assets/img/descargaxls.png" alt="Descargar excel" >
                             </a>
                         </div>
