@@ -9,6 +9,8 @@ use App\Exports\TareasEnDigitalExport;
 use App\Exports\TareasVentasClickExport;
 use App\Exports\TicketGodaddyExport;
 use App\Exports\TicketEnDigitalExport;
+use App\Exports\CustomersExport;
+use App\Exports\SalesOrderExport;
 
 
 class ReportsController extends Controller
@@ -41,5 +43,15 @@ class ReportsController extends Controller
     public function reportTicketGodaddy(Excel $excel) {
         $name = 'Ticket_goaddady.xlsx';
         return $excel->download(new TicketGodaddyExport, $name);
+    }
+
+    public function reportCustomers(Excel $excel) {
+        $name = 'Customers.xlsx';
+        return $excel->download(new CustomersExport, $name);
+    }
+
+    public function reportSalesOrders(Excel $excel) {
+        $name = 'SalesOrders.xlsx';
+        return $excel->download(new SalesOrderExport, $name);
     }
 }
